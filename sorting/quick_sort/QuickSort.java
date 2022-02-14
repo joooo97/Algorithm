@@ -29,7 +29,7 @@ public class QuickSort {
 
 			// left와 right가 교차되지 않았다면 left의 데이터와 right의 데이터를 교환하고,
 			// 교차되었다면 현재 둘 중 더 작은 값인 right의 데이터와 피벗을 교환
-			if(left < right) swap(arr, left, right);
+			if(left <= right) swap(arr, left, right);
 			else swap(arr, right, pivot);
 		}
 		
